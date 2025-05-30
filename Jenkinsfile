@@ -19,7 +19,6 @@ pipeline {
     // Fail fast, keep logs, etc.
     buildDiscarder(logRotator(numToKeepStr: '20'))
     timeout(time: 10, unit: 'MINUTES')
-    ansiColor('xterm')
   }
 
   stages {
